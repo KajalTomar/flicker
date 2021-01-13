@@ -21,10 +21,10 @@ currentTime = now.strftime("%H:%M:%S")
 
 streak = 5
 
-SQL = "INSERT INTO streakinfo(date,streak,time)values(%s,%s,%s)"
+SQL = "INSERT INTO streakinfo(date,streak)values(%s,%s)"
 
 #cur.execute("CREATE TABLE streakinfo (date date PRIMARY KEY, streak smallint, time time);")
-cur.execute("INSERT INTO streakinfo(date,streak,time)values(%s,%s,%s)",(currentDate,streak,currentTime))
+cur.execute("INSERT INTO streakinfo(date,streak)values(%s,%s)",(currentDate,streak))
 
 conn.commit()
 
