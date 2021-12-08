@@ -6,7 +6,7 @@ from datetime import datetime
 conn = psycopg2.connect(
     database='data', 
     user='postgres', 
-    password='Shillai1!', 
+    password='', 
     host='127.0.0.1',
     port='5432')
 
